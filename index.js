@@ -28,10 +28,10 @@ class Usuario {
     getBookName() {
 
         return this.libros.map(object =>{
-            return (object.nombre);
+            return (object.titulo);
         }); 
 
-        //return this.libros.filter(autor => autor.nombre === autor)
+           
 
     } 
 
@@ -58,4 +58,4 @@ persona.addBook("El poder de los hábitos" , "Charles Duhigg")
 console.log(persona.libros)
 
 
-console.log(persona.getBookNames())
+console.log(persona.getBookName())
