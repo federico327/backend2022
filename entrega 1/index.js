@@ -22,18 +22,18 @@ class Usuario {
     }
 
     addBook(titulo, autor){
-        this.libros.push([{titulo, autor}])
+        this.libros.push({titulo, autor})
     }
 
-    getBookName() {
+    getBookName(){
 
         return this.libros.map(object =>{
             return (object.titulo);
-        }); 
+        });
 
            
 
-    } 
+    }
 
     
 };
@@ -50,7 +50,7 @@ persona.addMascotas("Piqui")
 
 console.log (persona.mascotas)
 
-console.log (persona.countMascotas())
+    console.log (persona.countMascotas())
 
 persona.addBook("The Lord of the Rings" , "J. R. R. Tolkien")
 persona.addBook("El poder de los hábitos" , "Charles Duhigg")
